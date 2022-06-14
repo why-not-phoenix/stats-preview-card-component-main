@@ -1,0 +1,166 @@
+/* General Styling */
+
+html {
+  font-size: 10px; /* to make working with em more convenient */
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+  color: #ffffff; /* websafe */
+  color: hsl(0, 0%, 100%);
+  background-color: #090b1a; /* websafe */
+  background-color: hsl(233, 47%, 7%);
+}
+
+main {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card Styling - Mobile first */
+
+.card {
+  background-color: #1b1938; /* websafe */
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 0.8rem;
+  width: 24.7rem;
+}
+
+.side-img {
+  border-radius: 0.8rem 0.8rem 0 0;
+  height: 18rem;
+  background-color: #aa5cdb; /* websafe */
+  background-color: hsl(277, 64%, 61%);
+}
+
+.side-img img {
+  border-radius: 0.8rem 0.8rem 0 0;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: multiply;
+  opacity: 0.75;
+}
+
+.main-section {
+  padding: 3rem 3rem 0 3rem;
+}
+
+h1 {
+  line-height: 1.2;
+  margin: 0;
+}
+
+h1 span {
+  color: #aa5cdb; /* websafe */
+  color: hsl(277, 64%, 61%);
+}
+
+.main-section p {
+  color: #f2f2f2; /* websafe */
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.stats ul {
+  padding: 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  list-style: none;
+  height: 17.5rem;
+}
+
+h2 {
+  font-size: 1.7rem;
+  margin: 0;
+}
+
+.m {
+  text-transform: uppercase; /* I know! I just don't want to edit the HTML */
+}
+
+.stats p {
+  color: #e6e6e6; /* websafe */
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* Card Styling - Desktop */
+
+@media screen and (min-width: 1350px) {
+  .card {
+    width: 118.5rem;
+    max-height: 50rem;
+    display: flex;
+    flex-flow: row-reverse;
+  }
+
+  .side-img {
+    height: 100%;
+    width: 50%;
+    border-radius: 0 0.8rem 0.8rem 0;
+  }
+
+  .side-img img{
+    border-radius: 0 0.8rem 0.8rem 0;
+  }
+
+  .main-section {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    text-align: left;
+    padding: 8rem 12rem 4rem 8rem;
+    width: 50%;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    line-height: 1.3;
+    margin: 0;
+  }
+
+  .main-section p {
+    font-size: 1.55rem;
+    margin: 3rem 0;
+  }
+
+  .stats ul {
+    flex-flow: row;
+    justify-content: space-between;
+    height: auto;
+    margin-top: 5rem;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 2.1rem;
+  }
+
+  .stats p {
+    margin: 0;
+    font-size: 1.15rem;
+  }
+}
+
+/* Attribution Styling */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3; /* websafe */
+  color: hsl(228, 45%, 44%);
+}
